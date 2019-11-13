@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_marginTop="8dp">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@android:drawable/btn_star_big_on"
+            android:id="@+id/UserPic"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="16:12" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="UserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserNameFeed" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/UserPic" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:textAlignment="center" android:textStyle="bold" android:textSize="18sp"/>
+    <Button
+            android:text="DISLIKE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DislikeButton" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/UserNameFeed" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LikeButton" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/UserNameFeed" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp" android:text="LIKE"/>
+</android.support.constraint.ConstraintLayout>
